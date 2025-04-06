@@ -15,7 +15,7 @@ private:
 mongocxx::database database;
 
 public:
-    MongoDBConnection() : database(client["taskdb"]) {}
+    MongoDBConnection() : database(client["uno"]) {}
 
     mongocxx::database getDatabase() {
         return database;

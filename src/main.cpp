@@ -13,7 +13,7 @@ using bsoncxx::builder::stream::finalize;
 int main() {
     MongoDBConnection connection;
     auto database = connection.getDatabase();
-    auto collection = database["tasks"];
+    auto collection = database["dos"];
 
     // Crear una tarea
     auto task = document{} << "title" << "Aprender MongoDB" << "completed" << false << finalize;
